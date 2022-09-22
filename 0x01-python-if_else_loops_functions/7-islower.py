@@ -4,4 +4,3 @@ def islower(c):
         if(letter == ord(c)):
             return True
     return False
-    
