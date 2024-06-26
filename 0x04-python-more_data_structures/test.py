@@ -1,12 +1,6 @@
->>> class User:
->>>     id = 89
->>>     name = "no name"
->>>     __password = None
->>>     
->>>     def __init__(self, new_name=None):
->>>         self.is_new = True
->>>         if new_name is not None:
->>>             self.name = new_name
->>> 
->>> u = User()
->>> u.name
+id(a)
+139926795932424
+a
+[1, 2, 3, 4]
+a = a + [5]
+id(a)
