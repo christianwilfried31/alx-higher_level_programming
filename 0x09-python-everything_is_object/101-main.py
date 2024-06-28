@@ -1,9 +1,17 @@
-#!/usr/bin/python3
-LockedClass = __import__('101-locked_class').LockedClass
+class Base():
+    """ My base class """
 
-lc = LockedClass()
-lc.first_name = "John"
-try:
-    lc.last_name = "Snow"
-except Exception as e:
-    print("[{}] {}".format(e.__class__.__name__, e))
+    __nb_instances = 0
+
+    def __init__(self):
+        Base.__nb_instances += 1
+        self.id = Base.__nb_instances
+
+class User(Base):
+    """ My User class """
+
+    def __init__(self):
+        self.id = 89
+
+u = User()
+print(u.id)
